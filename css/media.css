@@ -1,0 +1,44 @@
+@media (max-width: 1100px){
+	.products {
+		grid-template-columns: repeat(2, auto) !important;
+	}
+	.cards {
+		grid-template-columns: repeat(2, auto);
+	}
+	.maincont {
+		grid-template-columns: auto ;
+	}
+	.mainright img {
+		margin-top: 100px;
+	}
+	.mainleft {
+		margin-right: 100px;
+	}
+}
+
+@media (max-width: 800px){
+	#contact .container{
+		grid-template-columns: auto !important;
+	}
+	.products {
+		grid-template-columns: auto !important;
+	}
+	.cards {
+		grid-template-columns: auto;
+	}
+	
+
+}
+
+@media (max-width: 700px){
+	.headerul{
+		display: none;
+	}
+	.ham{
+		display: block !important;
+	}
+
+}
+
+
+

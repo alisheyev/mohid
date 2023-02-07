@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?Family=Poppins:wght@500;600;700&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+/* font-family: 'Inter', sans-serif; */
+
+
+@import url(./css/header.css);
+@import url(./css/main.css);
+@import url(./css/cards.css);
+@import url(./css/media.css);
+@import url(./css/products.css);
+@import url(./css/about.css);
+
+
+*{
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+	outline: none;
+	scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before{
+	box-sizing: border-box;
+}
+
+
+
+.container{
+	max-width: 1100px;
+	padding: 0 20px;
+	margin: 0 auto;
+	text-decoration: none;
+	list-style: none;
+}
+
+:root{
+	--tran-05: all 0.5s ease;
+	--pop: 'Poppins', sans-serif;
+	--inter:'Inter', sans-serif;
+	--white: #FFFFFF;
+	--f6: #F6F6F6;
+	--f5: #F5F5F5;
+	--blue: #3858D6;
+	--grey: #8B8E99;
+	--black: black;
+	--bgc: linear-gradient(155.28deg, #383638 2.06%, #0B0B0B 33.08%);
+}
+
+body.dark {
+	--f5: black;
+	--f6: #797b7d;
+	--beige: black;
+	--grey:  #484646;
+	--white: black;
+	--black: white;
+	--bgc: linear-gradient(155.28deg, #383638 2.06%, #ffffff 33.08%);
+}
+
+.ham{
+	position: relative;
+	display: none;
+	cursor: pointer;
+}
+
+.ham i{
+	font-size: 20px;
+	color: var(--white);
+}
+
+.hamdrop{
+	right: -25px;
+	padding: 5px;
+	background-image: var(--bgc);
+	position: absolute;
+	display: none;
+	text-align: center;
+}
+
+.hamdrop a{
+	margin: 5px;
+	font-family: var(--pop);
+	color: var(--white);
+	text-decoration: none;
+	font-size: 14px;
+	text-align: center;
+}
+
+.hamdrop a:hover{
+	text-decoration: underline;
+}
+
+.ham:hover .hamdrop{
+	display: block;
+}

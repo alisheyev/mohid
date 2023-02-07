@@ -1,0 +1,148 @@
+
+
+.navbar{
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	justify-content: space-between;
+	align-items: center;
+}
+
+main{
+	transition: var(--tran-05);
+	background-image: var(--bgc);
+}
+
+nav{
+	padding: 23px 0;
+	color: var(--white);
+	position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.navbarshrink{
+	background-image: var(--bgc);
+	padding: 10px 0px;
+	box-shadow: 1px 5px 15px var(--black);
+}
+
+.navlogo{
+	display: flex;
+	align-items: center;
+}
+
+.navlogo h1{
+	transition: var(--tran-05);
+	font-family: var(--pop);
+	color: var(--white);
+ 	font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+  
+
+
+.headerul{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+
+.dropdown{
+	position: relative;
+}
+
+.dropdowncontent{
+	cursor: pointer;
+	display: none;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background: var(--bgc);
+	position: absolute;
+    z-index: 1;
+	padding: 5px;
+	text-align: center;
+}
+
+
+.dropdowncontent a{
+	transition: var(--tran-05);
+	color: var(--grey);
+	font-family: var(--pop);
+	font-size: 13px;
+	font-weight: 500;
+	margin: 5px 0;
+}
+
+.dropdowncontent a:hover{
+	text-decoration: underline;
+	font-size: 14px;
+}
+.dropdown:hover .dropdowncontent{
+	display: block;
+	cursor: pointer;
+}
+
+.headerul li{
+	margin: 0 10px;
+}
+
+.ulli{
+	transition: var(--tran-05);
+	font-family: var(--pop);
+	color: var(--grey);
+	font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.navitems{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+.navitems i{
+	margin: 0 7px;
+}
+
+.switch{
+	margin-right: 15px;
+	display: flex;
+}
+
+.switch input{
+	display: flex;
+	align-items: center;
+	height: 22px;
+    width: 40px;
+	padding: 2.5px;
+	background-color: var(--grey);
+	border-radius: 15px;
+	appearance: none;
+	cursor: pointer;
+}
+
+.switch input::after{
+	content: "";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 12.5px;
+	background-color: var(--black);
+	transition: var(--tran-05);
+}
+
+.switch input:checked::after{
+	margin-left: 20px;
+	background-color: var(--black);
+}
+
+.switch input:checked{
+	background-color: var(--grey);
+}
